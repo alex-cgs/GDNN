@@ -1,16 +1,16 @@
 import math
 import time
 import random
+import json
 
 from collections import namedtuple, deque
-from itertools import count
+# from itertools import count
 
 from env import *
 
 import pyautogui
 
 import torch
-import json
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
@@ -22,7 +22,7 @@ reward_arr = []
 
 BEST_X = 0
 
-BATCH_SIZE = 50000 #len(level_data)
+BATCH_SIZE = len(level_data) #50000
 print("Batch size:", BATCH_SIZE)
 GAMMA = 0.99
 EPS_START = 0.9

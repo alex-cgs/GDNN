@@ -6,7 +6,7 @@ import time
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-screen_type = "laptop" # "laptop" or "desktop"
+screen_type = "desktop" # "laptop" or "desktop"
 screen_region = (166, 76, 368, 957) if screen_type == "desktop" else (77, 106, 296, 1081)
 
 view_region = (1444, 132, 2360, 1295) if screen_type == "desktop" else (1444, 147, 2360, 1438)
